@@ -1,7 +1,9 @@
 body {
     display: flex;
+    flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
+    background-color: #829191;
 }
 
 .test {
@@ -11,12 +13,28 @@ body {
 }
 
 .Grid {
-    width: 300px;
-    height: 300px;
-    border: 2px solid black;
+    flex-shrink: 0;
+    width: 500px;
+    height: 500px;
+    margin: 30px;
+    border: 5px solid #4C5B61;
     display: flex;
     flex-direction: column;
 }
+
+.controls {
+    display: flex;
+    flex-direction: column;
+}
+button.apply{
+    padding: 5px;
+    background: #4C5B61;
+}
+.sizeControls {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .row {
     flex: 1;
@@ -29,4 +47,19 @@ body {
     flex: 1;
     background-color: white;
     border: 0.05px solid black;
+}
+
+.cell:hover {
+    background-color: #C5C5C5;
+}
+
+.pressed {
+    background-color: black;
+}
+
+.sizeLabel{
+    text-align: center;
+    height: 20px;
+    background-color: #C5C5C5;
+    
 }
